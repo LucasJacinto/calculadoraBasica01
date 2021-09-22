@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="principal">
+
+        <h1>Calculadora</h1>
+       
+        <form action="" name="calcul">
+            <input type="text" id="res" name="txt" class="tela" disabled><br>
+
+            <input type="button" name="txt1" value="C" onclick="location.reload()">
+            <input type="button" name="back" value="<" onclick="apagar()">
+            <input type="button" name="bPorc" value="%" onclick="porcentagem(value)">
+            <input type="button" name="bDiv" value="/" onclick="incorporar(bDiv.value)"><br>
+            
+            
+            <input type="button" name="b7" value="7" onclick="incorporar(b7.value)">
+            <input type="button" name="b8" value="8" onclick="incorporar(b8.value)">
+            <input type="button" name="b9" value="9" onclick="incorporar(b9.value)">
+            <input type="button" name="bMult" value="*" onclick="incorporar(bMult.value)"><br>
+
+           
+            <input type="button" name="b4" value="4" onclick="incorporar(b4.value)">
+            <input type="button" name="b5" value="5" onclick="incorporar(b5.value)">
+            <input type="button" name="b6" value="6" onclick="incorporar(b6.value)"> 
+            <input type="button" name="bSub" value="-" onclick="incorporar(bSub.value)"><br>
+            
+
+            <input type="button" name="b1" value="1" onclick="incorporar(b1.value)">
+            <input type="button" name="b2" value="2" onclick="incorporar(b2.value)">
+            <input type="button" name="b3" value="3" onclick="incorporar(b3.value)">
+            <input type="button" name="bAdd" value="+" onclick="incorporar(bAdd.value)"><br>
+            
+            <input type="button" name="bPot" value="**" onclick="incorporar(bPot.value)">
+            <input type="button" class="zero" name="b0" value="0" onclick="incorporar(b0.value)">
+            <input type="button" name="bPonto" value="." onclick="incorporar(bPonto.value)">
+            <input type="button" class="igual" name="bIgual" value="=" onclick="txt.value = eval(txt.value)">
+
+        </form>
+        <footer class="rodape">
+            <p>Lucas Jacinto</p>
+        </footer>
+    </div>
+    
+    <script src="calcul.js"></script>
+</body>
+</html>
